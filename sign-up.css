@@ -12,12 +12,13 @@ body {
 .sidebar {
     background: black;
     opacity: 95%;
-    height: 100%;
-    width: 500px;
+    height: 100vh;
+    width: 35vw;
     position: fixed;
     left: 0;
     top: 0;
     padding-top: 40px;
+    border-radius: 0px 150px 150px 0px;
 
 }
 
@@ -25,10 +26,16 @@ h1 {
     font-family: "BungeeShade";
     color: blueviolet;
     text-align: center;
-    font-size: 8rem;
+    font-size: 7rem;
     
 }
 
+h2{
+    font-family: "BungeeShade";
+    color: peru;
+    text-align: center;
+    font-size: 5.5rem;
+}
 /* .main {
 
 } */
