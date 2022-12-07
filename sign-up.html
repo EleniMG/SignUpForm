@@ -29,10 +29,10 @@
             <input type="date" id="date_of_birth">
 
             <label for="email">*Email:</label>
-            <input type="email" id="email" placeholder="tom@coolguy.com" required minlength="2">
+            <input type="email" id="email" placeholder="tom@coolguy.com" required minlength="2" pattern="(\S)+@[A-Za-z0-9]+[.][A-Za-z0-9]+([.][A-Za-z0-9]+)*">
 
             <label for="confirmed_email">*Confirm Email:</label>
-            <input type="email" id="confirmed_email" placeholder="christine@coolguy.com" required>
+            <input type="email" id="confirmed_email" placeholder="christine@coolguy.com" required minlength="2" pattern="(\S)+@[A-Za-z0-9]+[.][A-Za-z0-9]+([.][A-Za-z0-9]+)*">
 
             <button type="submit">Submit</button>
 

@@ -82,3 +82,13 @@ h3{
         transform: translateY(0vh);
     }
 }
+
+
+input:invalid {
+    border-color: red;
+
+}
+
+input:valid {
+    border-color: green;
+}
