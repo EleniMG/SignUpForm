@@ -15,28 +15,31 @@
     </div>
     
     <main class="main">
-        <h3>Do you want to become Eleni's friend and discover happiness?<br>Enter your details below!</h3>
+        <h3>Do you want to become Eleni's friend and discover happiness?<br><br>Enter your details below!</h3>
 
         <section>
             <div>
                 <label for="first_name">*First Name:</label>
                 <input type="text" id="first_name" placeholder="Tom" required minlength="2">
-
+                
                 <label for="last_name">*Last Name:</label>
                 <input type="text" id="last_name" placeholder="Segura" required minlength="2">
             </div>
 
-            <div>
-                <label for="date_of_birth">Date of Birth:</label>
-                <input type="date" id="date_of_birth">
-            </div>
-
+            
             <div>
                 <label for="email">*Email:</label>
                 <input type="email" id="email" placeholder="tom@coolguy.com" required minlength="2" pattern="(\S)+@[A-Za-z0-9]+[.][A-Za-z0-9]+([.][A-Za-z0-9]+)*">
 
                 <label for="confirmed_email">*Confirm Email:</label>
                 <input type="email" id="confirmed_email" placeholder="christine@coolguy.com" onchange="compareEmails()" required minlength="2" pattern="(\S)+@[A-Za-z0-9]+[.][A-Za-z0-9]+([.][A-Za-z0-9]+)*">
+            </div>
+
+            <div>
+                <label for="date_of_birth">Date of Birth:</label>
+                <input type="date" id="date_of_birth">
+                Are you sure? <a href="javascript:randomLinkGenerator();" target="_blank">Click here!</a>
+
             </div>
 
             <button type="submit">Submit</button>
@@ -54,6 +57,33 @@
                 } else {
                     return true;
                 }
+
+
+                function randomLinkGenerator(i) {
+                                      
+                    let i = Math.floor(Math.random() * 5);
+                   
+                    if(i===1) {
+                        return href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                    }
+
+                    if(i===2) {
+                        return href="https://www.youtube.com/watch?v=AMT698ArSfQ"
+                    }
+
+                    if(i===3) {
+                        return href="https://www.youtube.com/watch?v=k1BneeJTDcU"
+                    }
+
+                    if(i===4) {
+                        return href="https://www.youtube.com/watch?v=Dkm8Hteeh6M"
+                    }
+
+                    if(i===5){
+                        return href="https://www.youtube.com/watch?v=2rHRztFGOm8"
+                    }
+                }
+                
             }
 
 

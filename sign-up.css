@@ -59,12 +59,17 @@ h3{
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     animation: 0.5s linear slideInFromTop;
+    padding: 30px;
 }
 
 section {
     font-family:'Courier New', Courier, monospace;
     display: flex;
-
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    row-gap: 100px;
     
 }
 
@@ -97,6 +102,11 @@ input {
     border-width: 3px;
 }
 
+input:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rebeccapurple;
+}
+
 input:not(:active):valid {
     border-color: green;
 }
@@ -105,3 +115,16 @@ input:not(:active):invalid {
     border-color: red;
 }
 
+button{
+    border-radius: 8px;
+ 
+}
+
+button:hover{
+    background-color: rgba(5, 145, 121, 0.548);
+}
+
+button:focus{
+    border-width: 3px;
+    border-color: rebeccapurple
+}
