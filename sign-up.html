@@ -32,11 +32,27 @@
             <input type="email" id="email" placeholder="tom@coolguy.com" required minlength="2" pattern="(\S)+@[A-Za-z0-9]+[.][A-Za-z0-9]+([.][A-Za-z0-9]+)*">
 
             <label for="confirmed_email">*Confirm Email:</label>
-            <input type="email" id="confirmed_email" placeholder="christine@coolguy.com" required minlength="2" pattern="(\S)+@[A-Za-z0-9]+[.][A-Za-z0-9]+([.][A-Za-z0-9]+)*">
+            <input type="email" id="confirmed_email" placeholder="christine@coolguy.com" onchange="compareEmails()" required minlength="2" pattern="(\S)+@[A-Za-z0-9]+[.][A-Za-z0-9]+([.][A-Za-z0-9]+)*">
 
             <button type="submit">Submit</button>
 
         </section>
+
+        <script>
+            function compareEmails(section){
+                const email1 = document.getElementById("email")
+                const email2 = document.getElementById("confirmed_email")
+
+                if(email1.value !== email2.value){
+                    alert("Email addresses do not match!");
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+
+
+        </script>
         
     </main>
     
