@@ -18,28 +18,33 @@
         <h3>Do you want to become Eleni's friend and discover happiness?<br>Enter your details below!</h3>
 
         <section>
-            <label for="first_name">*First Name:</label>
-            <input type="text" id="first_name" placeholder="Tom" required minlength="2">
+            <div>
+                <label for="first_name">*First Name:</label>
+                <input type="text" id="first_name" placeholder="Tom" required minlength="2">
 
+                <label for="last_name">*Last Name:</label>
+                <input type="text" id="last_name" placeholder="Segura" required minlength="2">
+            </div>
 
-            <label for="last_name">*Last Name:</label>
-            <input type="text" id="last_name" placeholder="Segura" required minlength="2">
-            
-            <label for="date_of_birth">Date of Birth:</label>
-            <input type="date" id="date_of_birth">
+            <div>
+                <label for="date_of_birth">Date of Birth:</label>
+                <input type="date" id="date_of_birth">
+            </div>
 
-            <label for="email">*Email:</label>
-            <input type="email" id="email" placeholder="tom@coolguy.com" required minlength="2" pattern="(\S)+@[A-Za-z0-9]+[.][A-Za-z0-9]+([.][A-Za-z0-9]+)*">
+            <div>
+                <label for="email">*Email:</label>
+                <input type="email" id="email" placeholder="tom@coolguy.com" required minlength="2" pattern="(\S)+@[A-Za-z0-9]+[.][A-Za-z0-9]+([.][A-Za-z0-9]+)*">
 
-            <label for="confirmed_email">*Confirm Email:</label>
-            <input type="email" id="confirmed_email" placeholder="christine@coolguy.com" onchange="compareEmails()" required minlength="2" pattern="(\S)+@[A-Za-z0-9]+[.][A-Za-z0-9]+([.][A-Za-z0-9]+)*">
+                <label for="confirmed_email">*Confirm Email:</label>
+                <input type="email" id="confirmed_email" placeholder="christine@coolguy.com" onchange="compareEmails()" required minlength="2" pattern="(\S)+@[A-Za-z0-9]+[.][A-Za-z0-9]+([.][A-Za-z0-9]+)*">
+            </div>
 
             <button type="submit">Submit</button>
 
         </section>
 
         <script>
-            function compareEmails(section){
+                function compareEmails(){
                 const email1 = document.getElementById("email")
                 const email2 = document.getElementById("confirmed_email")
 

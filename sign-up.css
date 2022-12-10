@@ -54,10 +54,18 @@ h2{
 
 h3{
     font-style: italic;
+    font-size: 2em;
     color: black;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     animation: 0.5s linear slideInFromTop;
+}
+
+section {
+    font-family:'Courier New', Courier, monospace;
+    display: flex;
+
+    
 }
 
 
@@ -84,11 +92,16 @@ h3{
 }
 
 
-input:invalid {
-    border-color: red;
-
+input {
+    border-radius: 8px;
+    border-width: 3px;
 }
 
-input:valid {
+input:not(:active):valid {
     border-color: green;
 }
+
+input:not(:active):invalid {
+    border-color: red;
+}
+
