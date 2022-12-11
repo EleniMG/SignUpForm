@@ -107,9 +107,9 @@ input:focus {
     box-shadow: 0 0 0 3px rebeccapurple;
 }
 
-input:not(:active):valid {
+/* input:not(:active):valid {
     border-color: green;
-}
+} */
 
 input:not(:active):invalid {
     border-color: red;
@@ -117,6 +117,11 @@ input:not(:active):invalid {
 
 button{
     border-radius: 8px;
+    display:flex;
+    align-self: center;
+    padding: 20px 30px;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
  
 }
 
