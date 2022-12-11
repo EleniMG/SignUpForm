@@ -142,7 +142,7 @@ input:focus {
     border-color: green;
 } */
 
-input:not(:active):invalid {
+input:not(:placeholder-shown):invalid {
     border-color: red;
 }
 
