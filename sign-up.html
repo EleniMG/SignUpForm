@@ -9,6 +9,31 @@
     <title>Document</title>
 </head>
 <body>
+    <script>
+        function compareEmails(){
+            const email1 = document.getElementById("email")
+            const email2 = document.getElementById("confirmed_email")
+
+            if(email1.value !== email2.value){
+                alert("Email addresses do not match!");
+                return false;
+            } else {
+                return true;
+            }   
+        }
+            
+        function randomLinkGenerator() {
+            console.log('sdf');
+            const linksArray = ["https://www.youtube.com/watch?v=dQw4w9WgXcQ", "https://www.youtube.com/watch?v=AMT698ArSfQ", "https://www.youtube.com/watch?v=k1BneeJTDcU", "https://www.youtube.com/watch?v=Dkm8Hteeh6M", "https://www.youtube.com/watch?v=2rHRztFGOm8"]
+
+            const randomLinkIndex = Math.floor(Math.random() * linksArray.length);
+            
+            return window.location = linksArray[randomLinkIndex]
+
+        
+        }
+    </script>
+
     <div class="sidebar">
         <h1>Eleni's Friends</h1>
         <h2>Sign Up Today!</h2>
@@ -38,57 +63,13 @@
             <div>
                 <label for="date_of_birth">Date of Birth:</label>
                 <input type="date" id="date_of_birth">
-                Are you sure? <a href="javascript:randomLinkGenerator();" target="_blank">Click here!</a>
+                Are you sure? <a  href="#" onclick="randomLinkGenerator()" target="_blank">Click here!</a>
 
             </div>
 
             <button type="submit"><strong>Submit</strong></button>
 
         </section>
-
-        <script>
-                function compareEmails(){
-                const email1 = document.getElementById("email")
-                const email2 = document.getElementById("confirmed_email")
-
-                if(email1.value !== email2.value){
-                    alert("Email addresses do not match!");
-                    return false;
-                } else {
-                    return true;
-                }
-
-
-                function randomLinkGenerator(i) {
-                                      
-                    let i = Math.floor(Math.random() * 5);
-                   
-                    if(i===1) {
-                        return href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                    }
-
-                    if(i===2) {
-                        return href="https://www.youtube.com/watch?v=AMT698ArSfQ"
-                    }
-
-                    if(i===3) {
-                        return href="https://www.youtube.com/watch?v=k1BneeJTDcU"
-                    }
-
-                    if(i===4) {
-                        return href="https://www.youtube.com/watch?v=Dkm8Hteeh6M"
-                    }
-
-                    if(i===5){
-                        return href="https://www.youtube.com/watch?v=2rHRztFGOm8"
-                    }
-                }
-                
-            }
-
-
-        </script>
-        
     </main>
     
 </body>
