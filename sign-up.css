@@ -96,6 +96,37 @@ section {
     }
 }
 
+@keyframes slideInFromBottomRight {
+    from {
+        transform: translate(100vh, 100vh);
+
+    }
+    to {
+        transform: translate(0vh, 0vh);
+    }
+}
+
+@keyframes slideInFromTopLeft {
+    from {
+        transform: translate(-100vh, -100vh);
+
+    }
+    to {
+        transform: translate(0vh, 0vh);
+    }
+}
+
+@keyframes slideInFromBottom {
+    from {
+        transform: translateY(50vh);
+
+    }
+    to {
+        transform: translateY(0vh);
+    }
+}
+
+
 
 input {
     border-radius: 8px;
@@ -122,6 +153,7 @@ button{
     padding: 20px 30px;
     font-size: 15px;
     font-family: 'Courier New', Courier, monospace;
+    animation: 0.3s linear slideInFromBottom;
  
 }
 
@@ -132,4 +164,18 @@ button:hover{
 button:focus{
     border-width: 3px;
     border-color: rebeccapurple
+}
+
+#name {
+    animation: 0.7s linear slideInFromBottomRight;
+}
+
+
+#emails {
+    animation: 0.5s linear slideInFromLeft;
+}
+
+
+#dobAndLink{
+    animation: 0.7s linear slideInFromTopLeft;
 }
