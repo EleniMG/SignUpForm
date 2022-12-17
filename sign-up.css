@@ -4,9 +4,9 @@ body {
     grid-template-columns: 1fr 2fr;
     column-gap: 5vw;
     
-
-
 }
+
+
 
 @font-face {
     font-family: "BungeeShade";
@@ -175,4 +175,47 @@ button:focus{
 
 #dobAndLink{
     animation: 0.7s linear slideInFromTopLeft;
+}
+
+
+@media only screen and (max-width: 768px) {
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    .main {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2em;
+    }
+
+    h1, h2 {
+        font-size: min(50px, 5em);
+    }
+
+    #name, #emails, #dobAndLink {
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        padding: 2em;
+    }
+
+    button{
+        margin-bottom: 2em;
+    }
 }
