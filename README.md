@@ -21,6 +21,7 @@
 - Form validation and pattern validation using Regex
 - Inserting custom fonts
 - Randomisation
+- Making the page accessible using "*" for required fields
 
 
 ### Improvements to be made:
