@@ -20,7 +20,7 @@
 - Form input elements
 - Form validation and pattern validation using Regex
 - Inserting custom fonts
-- Randomisationi
+- Randomisation
 
 
 ### Improvements to be made:
